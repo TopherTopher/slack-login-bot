@@ -2,7 +2,7 @@ import csv
 from time import sleep
 from datetime import datetime
 
-from api_token import token # Store API token in app_token.py
+from api_token import slack_api_token # Store API token in app_token.py
 
 import requests
 from tqdm import trange
@@ -22,7 +22,7 @@ def write_dicts_to_csv(filename, dictionaries):
 
 def get_users():
     concat_url = api_url + 'users.list' # Create API URL with endpoint
-    params = {'token': token}
+    params = {'token': slack_api_token}
     print(' Downloading users ...')
     res = requests.get(concat_url, params=params)
     res_data = res.json()

@@ -1,1 +1,1 @@
-slack_api_token="xoxb-304890950032-974288998819-s4yzhmaeX2S60Ka9pOs6rOs5"
+slack_api_token="" # Add your OAUTH token here - KEEP THIS SAFE
